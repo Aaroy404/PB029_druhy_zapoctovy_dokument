@@ -1,3 +1,27 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="contacts">
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="email" type="email-type"/>
+                <xs:element name="phone" type="phone-number-type"/>
+                <xs:element name="address" type="xs:string"/>
+                <xs:element name="note" type="xs:string"/>
+            </xs:choice>
+            <xs:attribute name="first-name" type="xs:string" use="required"/>
+            <xs:attribute name="last-name" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="basic-contact-info">
 
+    </xs:complexType>
+    <xs:simpleType name="email-type">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^@]*@[^@]*"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="phone-number-type">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(\+42[01])? ?[0-9]{3} ?[0-9]{3} ?[0-9]{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
 </xs:schema>
