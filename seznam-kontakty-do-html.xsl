@@ -73,10 +73,10 @@
 							font-style: italic;
 						}
                         .email-type {
-                            margin-left: 1em;
+                            text-indent: 1em;
                         }
                         .email {
-                            text-indent: 0.5em;
+                            text-indent: 1em;
                         }
 					]]>
 				</style>
