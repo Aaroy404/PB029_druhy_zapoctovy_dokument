@@ -15,7 +15,7 @@
 							min-width: 39em;
 							margin: auto;
 							padding: 0em 2em;
-							background-color: #FFCC7F;
+							background-color: #3F3BBA;
 							font-family: sans-serif, serif;
 							color: #000000;
 						}
