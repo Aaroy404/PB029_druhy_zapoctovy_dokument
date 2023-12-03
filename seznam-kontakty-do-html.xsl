@@ -102,7 +102,7 @@
         <div class="contact-background">
             <div>
                 <strong>Name:</strong>
-                <xsl:apply-templates select="first-name"/> <xsl:apply-templates select="last-name"/>
+                <xsl:apply-templates select="first-name"/><xsl:apply-templates select="last-name"/>
             </div>
             <ul>
                 <li>
