@@ -205,7 +205,7 @@
                         </div>
                     </li>
                 </xsl:if>
-                <xsl:if test="other">
+                <xsl:if test="contact/other">
                     <li>
                         <strong>Other: </strong>
                         <span class="basic-contact">
