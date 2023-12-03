@@ -274,11 +274,7 @@
     </xsl:template>
     <xsl:template match="note">
         <div>
-            <xsl:for-each select="tokenize(text(), '&#xA;')">
-                <div>
-                    <xsl:value-of select="."/>
-                </div>
-            </xsl:for-each>
+            <xsl:value-of select="text()" disable-output-escaping="yes"/>
         </div>
     </xsl:template>
 </xsl:transform>
