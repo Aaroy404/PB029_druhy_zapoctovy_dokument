@@ -238,12 +238,12 @@
         </div>
     </xsl:template>
     <xsl:template match="first-name">
-        <span class="contact-name">
+        <span>
             <xsl:value-of select="text()"/>
         </span>
     </xsl:template>
     <xsl:template match="last-name">
-        <span class="contact-name">
+        <span>
             <xsl:value-of select="text()"/>
         </span>
     </xsl:template>
