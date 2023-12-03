@@ -205,9 +205,9 @@
                         </div>
                     </li>
                 </xsl:if>
-                <xsl:if test="contact/other">
+                <xsl:if test="other">
                     <li>
-                        <strong>Other: </strong>
+                        <strong>Other contacts: </strong>
                         <span class="basic-contact">
                             <xsl:apply-templates select="other"/>
                         </span>

@@ -1,2 +1,2 @@
-<contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" title="Kontakty" xsi:noNamespaceSchemaLocation="seznam-kontakty.xsd">
+<contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" title="Contacts" xsi:noNamespaceSchemaLocation="seznam-kontakty.xsd">
 </contacts>

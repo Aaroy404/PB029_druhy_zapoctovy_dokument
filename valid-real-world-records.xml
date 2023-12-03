@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="seznam-kontakty-do-html.xsl"?>
-<contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" title="Kontakty" xsi:noNamespaceSchemaLocation="seznam-kontakty.xsd">
+<contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" title="Contacts" xsi:noNamespaceSchemaLocation="seznam-kontakty.xsd">
     <contact>
         <first-name>John</first-name>
         <last-name>Doe</last-name>
