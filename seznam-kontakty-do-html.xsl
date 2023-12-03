@@ -98,17 +98,32 @@
 		</html>
 	</xsl:template>
   
-	<xsl:template match="contact">
-        <div>
-		    <xsl:apply-templates select="first-name"/>
-		    <xsl:apply-templates select="last-name"/>
+    <xsl:template match="contact">
+        <div class="contact-background">
+            <div>
+                <strong>Name:</strong>
+                <xsl:apply-templates select="first-name"/>
+                <xsl:apply-templates select="last-name"/>
+            </div>
+            <ul>
+                <li>
+                    <strong>Email:</strong>
+                    <xsl:apply-templates select="email"/>
+                </li>
+                <li>
+                    <strong>Phone:</strong>
+                    <xsl:apply-templates select="phone"/>
+                </li>
+                <li>
+                    <strong>Address:</strong>
+                    <xsl:apply-templates select="address"/>
+                </li>
+                <li>
+                    <strong>Note:</strong>
+                    <xsl:apply-templates select="note"/>
+                </li>
+            </ul>
         </div>
-        <ul class="contact-background">
-            <xsl:apply-templates select="email"/>
-            <xsl:apply-templates select="phone"/>
-            <xsl:apply-templates select="address"/>
-            <xsl:apply-templates select="note"/>
-        </ul>
     </xsl:template>
     <xsl:template match="first-name">
         <span class="contact-name">
