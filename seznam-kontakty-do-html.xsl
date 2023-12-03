@@ -36,7 +36,7 @@
 							max-width: 52em;
 							margin: 0em auto;
 							padding: 1em 0em;
-							background-color: #FFF3E0;
+							background-color: #1DA5E5;
 							color: #000000;
 						}
 						#text {
@@ -63,7 +63,7 @@
 							margin: 0;
 							padding: 0.5em 0.3em 0.3em 2em;
 							list-style: none;
-							background-color: #A4EEF1;
+							background-color: #BCEFF1;
 							color: #000000;
 						}
 						div.value {
