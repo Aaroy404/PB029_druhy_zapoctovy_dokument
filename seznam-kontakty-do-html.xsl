@@ -75,6 +75,9 @@
                         .email-type {
                             margin-left: 1em;
                         }
+                        .email {
+                            margin-left: 1em;
+                        }
 					]]>
 				</style>
 				<title>
@@ -110,23 +113,31 @@
             </div>
             <ul>
                 <li>
-                    <h3>Email: </h3><br/>
+                    <Strong>Email: </Strong><br/>
                     <div class="email-type">
                         <xsl:if test="email[@type='work']">
                             <strong>Work:</strong>
-                            <xsl:apply-templates select="email[@type='work']"/>
+                            <span class="email">
+                                <xsl:apply-templates select="email[@type='work']"/>
+                            </span>
                         </xsl:if>
                         <xsl:if test="email[@type='personal']">
                             <strong>Personal:</strong>
-                            <xsl:apply-templates select="email[@type='personal']"/>
+                            <span class="email">
+                                <xsl:apply-templates select="email[@type='personal']"/>
+                            </span>
                         </xsl:if>
                         <xsl:if test="email[@type='other']">
                             <strong>Other:</strong>
-                            <xsl:apply-templates select="email[@type='other']"/>
+                            <span class="email">
+                                <xsl:apply-templates select="email[@type='other']"/>
+                            </span>
                         </xsl:if>
                         <xsl:if test="email[not(@type)]">
                             <strong>Unspecified:</strong>
-                            <xsl:apply-templates select="email[not(@type)]"/>
+                            <span class="email">
+                                <xsl:apply-templates select="email[not(@type)]"/>
+                            </span>
                         </xsl:if>
                     </div>
                 </li>
