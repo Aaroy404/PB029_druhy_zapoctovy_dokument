@@ -1,0 +1,6 @@
+<contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" title="Contacts" xsi:noNamespaceSchemaLocation="seznam-kontakty.xsd">
+    <contact>
+        <first-name>Jan</first-name>
+        <email type="work">jan.novak123@gmail.com</email>
+    </contact>
+    </contacts>

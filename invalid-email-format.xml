@@ -1,0 +1,27 @@
+<contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" title="Contacts" xsi:noNamespaceSchemaLocation="seznam-kontakty.xsd">
+    <contact>
+        <first-name>Jan</first-name>
+        <last-name>Novák</last-name>
+        <email type="work">jan.novak123gmail.com</email>
+        <email>jan.novak.jiny@centrumcz</email>
+        <phone type="personal">+420 123 456 789</phone>
+        <url type="other">http://www.seznam.cz</url>
+        <other>
+            <service>Skype</service>
+            <ID>JankoNovacek123</ID>
+        </other>
+        <address>
+            <street>Botanická</street>
+            <city>Brno</city>
+            <zip>602 00</zip>
+            <house-number>68A</house-number>
+        </address>
+        <note>
+            <line>This is a single line note.</line>
+        </note>
+        <note>
+            <line>This is a multiline note</line>
+            <line>with a new line.</line>
+        </note>
+    </contact>
+    </contacts>

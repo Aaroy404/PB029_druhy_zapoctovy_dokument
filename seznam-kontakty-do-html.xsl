@@ -226,11 +226,7 @@
                     <li>
                         <strong>Note: </strong> <br/>
                         <span class="basic-contact">
-                            <ul>
-                                <li>
-                                    <xsl:apply-templates select="note"/>
-                                </li>
-                            </ul>
+                            <xsl:apply-templates select="note"/>
                         </span>
                     </li>
                 </xsl:if>
