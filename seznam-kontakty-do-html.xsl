@@ -259,13 +259,18 @@
     </xsl:template>
     <xsl:template match="address">
         <div>
-            <xsl:apply-templates select="street"/>
+            <xsl:value-of select="street/text()"/>
             <xsl:text>, </xsl:text>
-            <xsl:apply-templates select="house-number"/>
+            <xsl:value-of select="house-number/text()"/>
             <xsl:text>, </xsl:text>
-            <xsl:apply-templates select="city"/>
+            <xsl:value-of select="city/text()"/>
             <xsl:text>, </xsl:text>
-            <xsl:apply-templates select="zip"/>
+            <xsl:value-of select="zip/text()"/>
+        </div>
+    </xsl:template>
+    <xsl:template match="note">
+        <div>
+            <xsl:value-of select="text()"/>
         </div>
     </xsl:template>
 </xsl:transform>
