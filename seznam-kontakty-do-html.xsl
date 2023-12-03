@@ -261,6 +261,13 @@
             </a>
         </div>
     </xsl:template>
+    <xsl:template match="other">
+        <div>
+            <xsl:value-of select="service"/>
+            <xsl:text>: </xsl:text>
+            <xsl:value-of select="ID"/>
+        </div>
+    </xsl:template>
     <xsl:template match="address">
         <div>
             <xsl:value-of select="street/text()"/>
