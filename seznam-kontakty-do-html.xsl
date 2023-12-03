@@ -56,7 +56,6 @@
 							color: #000000;
 						}
 						.contact-name {
-							padding: 0em 0.25em;
 							background-color: #E6E1CF;
 							color: #000000;
 						}
@@ -101,24 +100,24 @@
     <xsl:template match="contact">
         <div class="contact-background">
             <div>
-                <strong>Name:</strong>
-                <xsl:apply-templates select="first-name"/><xsl:apply-templates select="last-name"/>
+                <strong>Name: </strong>
+                <xsl:apply-templates select="first-name"/> <xsl:apply-templates select="last-name"/>
             </div>
             <ul>
                 <li>
-                    <strong>Email:</strong>
+                    <strong>Email: </strong> <br/>
                     <xsl:apply-templates select="email"/>
                 </li>
                 <li>
-                    <strong>Phone:</strong>
+                    <strong>Phone: </strong> <br/>
                     <xsl:apply-templates select="phone"/>
                 </li>
                 <li>
-                    <strong>Address:</strong>
+                    <strong>Address: </strong> <br/>
                     <xsl:apply-templates select="address"/>
                 </li>
                 <li>
-                    <strong>Note:</strong>
+                    <strong>Note: </strong> <br/>
                     <xsl:apply-templates select="note"/>
                 </li>
             </ul>
