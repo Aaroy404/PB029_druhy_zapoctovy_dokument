@@ -205,14 +205,24 @@
                         </div>
                     </li>
                 </xsl:if>
-                <li>
-                    <strong>Address: </strong> <br/>
-                    <xsl:apply-templates select="address"/>
-                </li>
-                <li>
-                    <strong>Note: </strong> <br/>
-                    <xsl:apply-templates select="note"/>
-                </li>
+                <xsl:if test="other">
+                    <li>
+                        <strong>Other: </strong>
+                        <xsl:apply-templates select="other"/>
+                    </li>
+                </xsl:if>
+                <xsl:if test="address">
+                    <li>
+                        <strong>Address: </strong> <br/>
+                        <xsl:apply-templates select="address"/>
+                    </li>
+                </xsl:if>
+                <xsl:if test="note">
+                    <li>
+                        <strong>Note: </strong> <br/>
+                        <xsl:apply-templates select="note"/>
+                    </li>
+                </xsl:if>
             </ul>
         </div>
     </xsl:template>
@@ -229,6 +239,27 @@
     <xsl:template match="email">
         <div>
             <xsl:value-of select="text()"/>
+        </div>
+    </xsl:template>
+    <xsl:template match="phone">
+        <div>
+            <xsl:value-of select="text()"/>
+        </div>
+    </xsl:template>
+    <xsl:template match="url">
+        <div>
+            <xsl:value-of select="text()"/>
+        </div>
+    </xsl:template>
+    <xsl:template match="address">
+        <div>
+            <xsl:apply-templates select="street"/>
+            <xsl:text>, </xsl:text>
+            <xsl:apply-templates select="home-number"/>
+            <xsl:text>, </xsl:text>
+            <xsl:apply-templates select="city"/>
+            <xsl:text>, </xsl:text>
+            <xsl:apply-templates select="zip"/>
         </div>
     </xsl:template>
 </xsl:transform>
