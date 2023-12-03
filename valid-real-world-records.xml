@@ -29,7 +29,6 @@
         <first-name>Jane</first-name>
         <last-name>Smith</last-name>
         <email type="personal">jane.smith-favorite-email123@mymail123.com</email>
-        <phone>+123 987 654 321</phone>
         <address>
             <street>Someone's street</street>
             <house-number>56</house-number>
@@ -58,7 +57,6 @@
     <contact>
         <first-name>Sarah</first-name>
         <last-name>Williams</last-name>
-        <email>sarah.williams@something.de</email>
         <phone>+53 111 222 333</phone>
         <url>http://www.sarahwilliams.com</url>
         <address>
@@ -77,7 +75,7 @@
         <first-name>David</first-name>
         <last-name>Johnson</last-name>
         <email type="work">david-johnson76@domain.en</email>
-        <phone>777888999</phone>
+        <phone type="other">777888999</phone>
         <address>
             <street>Sixth St</street>
             <house-number>12</house-number>

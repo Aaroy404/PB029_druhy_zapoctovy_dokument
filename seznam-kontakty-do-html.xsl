@@ -72,10 +72,10 @@
 						.label {
 							font-style: italic;
 						}
-                        .email-type {
+                        .basic-contact-header {
                             margin-left: 1em;
                         }
-                        .email {
+                        .basic-contact {
                             text-indent: 1em;
                         }
 					]]>
@@ -112,39 +112,99 @@
                 <xsl:apply-templates select="last-name"/>
             </div>
             <ul>
-                <li>
-                    <Strong>Email: </Strong><br/>
-                    <div class="email-type">
-                        <xsl:if test="email[@type='work']">
-                            <strong>Work:</strong>
-                            <span class="email">
-                                <xsl:apply-templates select="email[@type='work']"/>
-                            </span>
-                        </xsl:if>
-                        <xsl:if test="email[@type='personal']">
-                            <strong>Personal:</strong>
-                            <span class="email">
-                                <xsl:apply-templates select="email[@type='personal']"/>
-                            </span>
-                        </xsl:if>
-                        <xsl:if test="email[@type='other']">
-                            <strong>Other:</strong>
-                            <span class="email">
-                                <xsl:apply-templates select="email[@type='other']"/>
-                            </span>
-                        </xsl:if>
-                        <xsl:if test="email[not(@type)]">
-                            <strong>Unspecified:</strong>
-                            <span class="email">
-                                <xsl:apply-templates select="email[not(@type)]"/>
-                            </span>
-                        </xsl:if>
-                    </div>
-                </li>
-                <li>
-                    <strong>Phone: </strong> <br/>
-                    <xsl:apply-templates select="phone"/>
-                </li>
+                <xsl:if test="email">
+                    <li>
+                        <Strong>Email: </Strong><br/>
+                        <div class="basic-contact-header">
+                            <xsl:if test="email[@type='work']">
+                                <strong>Work:</strong>
+                                <span class="basic-contact">
+                                    <xsl:apply-templates select="email[@type='work']"/>
+                                </span>
+                            </xsl:if>
+                            <xsl:if test="email[@type='personal']">
+                                <strong>Personal:</strong>
+                                <span class="basic-contact">
+                                    <xsl:apply-templates select="email[@type='personal']"/>
+                                </span>
+                            </xsl:if>
+                            <xsl:if test="email[@type='other']">
+                                <strong>Other:</strong>
+                                <span class="basic-contact">
+                                    <xsl:apply-templates select="email[@type='other']"/>
+                                </span>
+                            </xsl:if>
+                            <xsl:if test="email[not(@type)]">
+                                <strong>Unspecified:</strong>
+                                <span class="basic-contact">
+                                    <xsl:apply-templates select="email[not(@type)]"/>
+                                </span>
+                            </xsl:if>
+                        </div>
+                    </li>
+                </xsl:if>
+                <xsl:if test="phone">
+                    <li>
+                        <strong>Phone: </strong> <br/>
+                        <div class="basic-contact-header">
+                            <xsl:if test="phone[@type='work']">
+                                <strong>Work:</strong>
+                                <span class="basic-contact">
+                                    <xsl:apply-templates select="phone[@type='work']"/>
+                                </span>
+                            </xsl:if>
+                            <xsl:if test="phone[@type='personal']">
+                                <strong>Personal:</strong>
+                                <span class="basic-contact">
+                                    <xsl:apply-templates select="phone[@type='personal']"/>
+                                </span>
+                            </xsl:if>
+                            <xsl:if test="phone[@type='other']">
+                                <strong>Other:</strong>
+                                <span class="basic-contact">
+                                    <xsl:apply-templates select="phone[@type='other']"/>
+                                </span>
+                            </xsl:if>
+                            <xsl:if test="phone[not(@type)]">
+                                <strong>Unspecified:</strong>
+                                <span class="basic-contact">
+                                    <xsl:apply-templates select="phone[not(@type)]"/>
+                                </span>
+                            </xsl:if>
+                        </div>
+                    </li>
+                </xsl:if>
+                <xsl:if test="url">
+                    <li>
+                        <strong>Url: </strong> <br/>
+                        <div class="basic-contact-header">
+                            <xsl:if test="url[@type='work']">
+                                <strong>Work:</strong>
+                                <span class="basic-contact">
+                                    <xsl:apply-templates select="url[@type='work']"/>
+                                </span>
+                            </xsl:if>
+                            <xsl:if test="url[@type='personal']">
+                                <strong>Personal:</strong>
+                                <span class="basic-contact">
+                                    <xsl:apply-templates select="url[@type='personal']"/>
+                                </span>
+                            </xsl:if>
+                            <xsl:if test="url[@type='other']">
+                                <strong>Other:</strong>
+                                <span class="basic-contact">
+                                    <xsl:apply-templates select="url[@type='other']"/>
+                                </span>
+                            </xsl:if>
+                            <xsl:if test="url[not(@type)]">
+                                <strong>Unspecified:</strong>
+                                <span class="basic-contact">
+                                    <xsl:apply-templates select="url[not(@type)]"/>
+                                </span>
+                            </xsl:if>
+                        </div>
+                    </li>
+                </xsl:if>
                 <li>
                     <strong>Address: </strong> <br/>
                     <xsl:apply-templates select="address"/>
