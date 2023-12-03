@@ -51,13 +51,22 @@
 						h3 {
 							margin: 0.5em 0em 0em 0em;
 						}
-						
+                        .contact-background h3 {
+							background-color: #FFF3E0;
+							color: #000000;
+						}
 						.contact-name {
 							padding: 0em 0.5em;
 							background-color: #E6E1CF;
 							color: #000000;
 						}
-						
+                        .contact-background {
+							margin: 0;
+							padding: 0.5em 0.3em 0.3em 2em;
+							list-style: none;
+							background-color: #E6E1CF;
+							color: #000000;
+						}
 						div.value {
 							text-indent: 1.5em;
 						}
@@ -90,18 +99,14 @@
 		<xsl:apply-templates select="last-name"/>
     </xsl:template>
     <xsl:template match="first-name">
-        <h3>
-            <span class="contact-name">
-                <xsl:value-of select="text()"/>
-            </span>
-        </h3>
+        <span class="contact-name">
+            <xsl:value-of select="text()"/>
+        </span>
     </xsl:template>
     <xsl:template match="last-name">
-        <h3>
-            <span class="contact-name">
-                <xsl:value-of select="text()"/>
-            </span>
-        </h3>
+        <span class="contact-name">
+            <xsl:value-of select="text()"/>
+        </span>
     </xsl:template>
 
 </xsl:transform>
