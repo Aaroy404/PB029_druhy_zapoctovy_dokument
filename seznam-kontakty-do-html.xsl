@@ -76,7 +76,7 @@
                             margin-left: 1em;
                         }
                         .email {
-                            margin-left: 1.5em;
+                            text-indent: 0.5em;
                         }
 					]]>
 				</style>
