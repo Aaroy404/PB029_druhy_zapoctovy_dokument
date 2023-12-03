@@ -107,11 +107,14 @@
             </div>
             <ul>
                 <li>
-                    <strong>Email: </strong> <br/>
-                    <xsl:for-each-group select="email" group-by="@type">
-                        <h4><xsl:value-of select="@type"/></h4>
-                        <xsl:apply-templates select="current-group()"/>
-                    </xsl:for-each-group>
+                    <strong>Email: </strong><br/>
+                    <!-- Select distinct groups using Muenchian grouping -->
+                    <xsl:for-each select="email[generate-id() = generate-id(key('emailGroup', @type)[1])]">
+                        <xsl:variable name="currentType" select="@type"/>
+                        <h4><xsl:value-of select="$currentType"/></h4>
+                        <!-- Apply templates to nodes in the current group -->
+                        <xsl:apply-templates select="key('emailGroup', $currentType)"/>
+                    </xsl:for-each>
 
                 </li>
                 <li>
