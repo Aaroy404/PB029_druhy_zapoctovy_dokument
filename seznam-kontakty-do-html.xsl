@@ -108,9 +108,11 @@
             <ul>
                 <li>
                     <strong>Email: </strong> <br/>
-                    <xsl:apply-templates select="email">
-                        <xsl:sort select="@type" order="ascending"/>
-                    </xsl:apply-templates>
+                    <xsl:for-each-group select="email" group-by="@type">
+                        <h4><xsl:value-of select="@type"/></h4>
+                        <xsl:apply-templates select="current-group()"/>
+                    </xsl:for-each-group>
+
                 </li>
                 <li>
                     <strong>Phone: </strong> <br/>
