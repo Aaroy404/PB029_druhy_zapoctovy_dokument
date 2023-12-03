@@ -72,6 +72,9 @@
 						.label {
 							font-style: italic;
 						}
+                        .email-type {
+                            margin-left: 1em;
+                        }
 					]]>
 				</style>
 				<title>
@@ -108,7 +111,7 @@
             <ul>
                 <li>
                     <strong>Email: </strong><br/>
-                    <div>
+                    <div class="email-type">
                         <xsl:if test="email[@type='work']">
                             <strong>Work:</strong>
                             <xsl:apply-templates select="email[@type='work']"/>
@@ -121,7 +124,7 @@
                             <strong>Other:</strong>
                             <xsl:apply-templates select="email[@type='other']"/>
                         </xsl:if>
-                        <xsl:if test="not(@type)">
+                        <xsl:if test="email[not(@type)]">
                             <strong>Unspecified:</strong>
                             <xsl:apply-templates select="email[not(@type)]"/>
                         </xsl:if>
