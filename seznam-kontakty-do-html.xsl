@@ -274,7 +274,12 @@
     </xsl:template>
     <xsl:template match="note">
         <div>
-            <xsl:value-of select="text()" disable-output-escaping="yes"/>
+            <xsl:apply-templates select="line"/>
+        </div>
+    </xsl:template>
+    <xsl:template match="line">
+        <div>
+            <xsl:value-of select="text()"/>
         </div>
     </xsl:template>
 </xsl:transform>

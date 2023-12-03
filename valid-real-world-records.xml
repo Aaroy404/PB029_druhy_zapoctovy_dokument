@@ -22,7 +22,9 @@
             <city>Los Angeles</city>
             <zip>90001</zip>
         </address>
-        <note>First record note.</note>
+        <note>
+            <line>First record note.</line>
+        </note>
     </contact>
 
     <contact>
@@ -49,9 +51,15 @@
             <ID>MichaelJohnsonIsCool</ID>
         </other>
         <url type="personal">http://www.michaeljohnson.com</url>
-        <note>Third</note>
-        <note>record</note>
-        <note>note.</note>
+        <note>
+            <line>Three</line>
+        </note>
+        <note>
+            <line>different</line>
+        </note>
+        <note>
+            <line>notes.</line>
+        </note>
     </contact>
 
     <contact>
@@ -65,9 +73,10 @@
             <city>Seattle</city>
             <zip>981 01</zip>
         </address>
-        <note>Multiline note about
-            the amazing Sarah Williams.
-            Very amazing indeed.
+        <note>
+            <line>Multiline note about</line>
+            <line>the amazing Sarah Williams.</line>
+            <line>Amazing indeed.</line>
         </note>
     </contact>
 

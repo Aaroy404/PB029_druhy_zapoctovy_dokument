@@ -109,9 +109,11 @@
         </xs:sequence>
     </xs:complexType>
 
-    <xs:simpleType name="note-type">
-        <xs:restriction base="xs:string"/>
-    </xs:simpleType>
+    <xs:complexType name="note-type">
+        <xs:sequence>
+            <xs:element name="line" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
 
     <xs:simpleType name="name-type">
         <xs:restriction base="xs:string">

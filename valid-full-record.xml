@@ -16,8 +16,12 @@
         <zip>602 00</zip>
         <house-number>68A</house-number>
     </address>
-    <note>This is a single line note.</note>
-    <note>This is a multiline note
-        with a new line.</note>
+    <note>
+        <line>This is a single line note.</line>
+    </note>
+    <note>
+        <line>This is a multiline note</line>
+        <line>with a new line.</line>
+    </note>
 </contact>
 </contacts>
