@@ -43,17 +43,10 @@
 							padding: 0em 1em;
 						}
 						a {
-							color: #807340;
+							color: #2A5BE8;
 						}
 						a:hover {
 							color: #FF6600;
-						}
-						h3 {
-							margin: 0.5em 0em 0em 0em;
-						}
-                        .contact-background h3 {
-							background-color: #1DA5E5;
-							color: #000000;
 						}
 						.contact-name {
 							background-color: #3AAFE6;
@@ -73,7 +66,6 @@
                         .contact-background:last-child {
                             border-bottom: 3px solid #000;
                         }
-
 						div.value {
 							text-indent: 1.5em;
 						}
@@ -234,7 +226,11 @@
                     <li>
                         <strong>Note: </strong> <br/>
                         <span class="basic-contact">
-                            <xsl:apply-templates select="note"/>
+                            <ul>
+                                <li>
+                                    <xsl:apply-templates select="note"/>
+                                </li>
+                            </ul>
                         </span>
                     </li>
                 </xsl:if>
