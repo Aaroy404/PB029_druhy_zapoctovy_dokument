@@ -1,0 +1,86 @@
+<contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" title="Kontakty" xsi:noNamespaceSchemaLocation="seznam-kontakty.xsd">
+    <contact>
+        <first-name>John</first-name>
+        <last-name>Doe</last-name>
+        <email type="work">john.doe@example.com</email>
+        <phone>+421 123 456 789</phone>
+        <other>
+            <service>Facebook</service>
+            <ID>JohnDoe123</ID>
+        </other>
+        <address>
+            <street>Main St</street>
+            <house-number>17b</house-number>
+            <city>New York</city>
+            <zip>100 01</zip>
+        </address>
+        <address>
+            <street>Second St</street>
+            <house-number>34</house-number>
+            <city>Los Angeles</city>
+            <zip>90001</zip>
+        </address>
+        <note>First record note.</note>
+    </contact>
+
+    <contact>
+        <first-name>Jane</first-name>
+        <last-name>Smith</last-name>
+        <email type="personal">jane.smith-favorite-email123@mymail123.com</email>
+        <phone>+123 987 654 321</phone>
+        <address>
+            <street>Someone's street</street>
+            <house-number>56</house-number>
+            <city>Chicago</city>
+            <zip>60601</zip>
+        </address>
+    </contact>
+
+    <contact>
+        <first-name>Michael</first-name>
+        <last-name>Johnson</last-name>
+        <email type="work">michael.johnson@example.com</email>
+        <email>mickyjohnny654@somewhere.something</email>
+        <phone>+7 555 555 555</phone>
+        <other>
+            <service>Twitter</service>
+            <ID>MichaelJohnsonIsCool</ID>
+        </other>
+        <url type="personal">http://www.michaeljohnson.com</url>
+        <note>Third</note>
+        <note>record</note>
+        <note>note.</note>
+    </contact>
+
+    <contact>
+        <first-name>Sarah</first-name>
+        <last-name>Williams</last-name>
+        <email>sarah.williams@something.de</email>
+        <phone>+53 111 222 333</phone>
+        <url>http://www.sarahwilliams.com</url>
+        <address>
+            <street>Fifth St</street>
+            <house-number>90</house-number>
+            <city>Seattle</city>
+            <zip>981 01</zip>
+        </address>
+        <note>Multiline note about
+            the amazing Sarah Williams.
+            Very amazing indeed.
+        </note>
+    </contact>
+
+    <contact>
+        <first-name>David</first-name>
+        <last-name>Johnson</last-name>
+        <email type="work">david-johnson76@domain.en</email>
+        <phone>777888999</phone>
+        <address>
+            <street>Sixth St</street>
+            <house-number>12</house-number>
+            <city>San Francisco</city>
+            <zip>94101</zip>
+        </address>
+    </contact>
+
+</contacts>
