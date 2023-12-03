@@ -108,7 +108,9 @@
             <ul>
                 <li>
                     <strong>Email: </strong> <br/>
-                    <xsl:apply-templates select="email"/>
+                    <xsl:apply-templates select="email">
+                        <xsl:sort select="@type" order="ascending"/>
+                    </xsl:apply-templates>
                 </li>
                 <li>
                     <strong>Phone: </strong> <br/>
@@ -135,5 +137,9 @@
             <xsl:value-of select="text()"/>
         </span>
     </xsl:template>
-
+    <xsl:template match="email">
+        <div>
+            <xsl:value-of select="text()"/>
+        </div>
+    </xsl:template>
 </xsl:transform>
