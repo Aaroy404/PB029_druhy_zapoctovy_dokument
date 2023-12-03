@@ -279,15 +279,17 @@
         </div>
     </xsl:template>
     <xsl:template match="address">
-        <div>
-            <xsl:value-of select="street/text()"/>
-            <xsl:text>, </xsl:text>
-            <xsl:value-of select="house-number/text()"/>
-            <xsl:text>, </xsl:text>
-            <xsl:value-of select="city/text()"/>
-            <xsl:text>, </xsl:text>
-            <xsl:value-of select="zip/text()"/>
-        </div>
+        <a href="http://maps.google.com/maps?q={street/text()},+{house-number/text()},+{city/text()},+{zip/text()}">
+            <div>
+                <xsl:value-of select="street/text()"/>
+                <xsl:text>, </xsl:text>
+                <xsl:value-of select="house-number/text()"/>
+                <xsl:text>, </xsl:text>
+                <xsl:value-of select="city/text()"/>
+                <xsl:text>, </xsl:text>
+                <xsl:value-of select="zip/text()"/>
+            </div>
+        </a>
     </xsl:template>
     <xsl:template match="note">
         <div>
