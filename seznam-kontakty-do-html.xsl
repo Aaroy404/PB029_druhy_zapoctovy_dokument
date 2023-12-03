@@ -110,7 +110,7 @@
             </div>
             <ul>
                 <li>
-                    <strong>Email: </strong><br/>
+                    <h3>Email: </h3><br/>
                     <div class="email-type">
                         <xsl:if test="email[@type='work']">
                             <strong>Work:</strong>
