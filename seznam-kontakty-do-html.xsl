@@ -108,12 +108,24 @@
             <ul>
                 <li>
                     <strong>Email: </strong><br/>
-                        <strong>Work:</strong>
-                        <xsl:apply-templates select="email[@type='work']"/>
-                        <strong>Personal:</strong>
-                        <xsl:apply-templates select="email[@type='personal']"/>
-                        <strong>Other:</strong>
-                        <xsl:apply-templates select="email[@type='other']"/>
+                    <div>
+                        <xsl:if test="email[@type='work']">
+                            <strong>Work:</strong>
+                            <xsl:apply-templates select="email[@type='work']"/>
+                        </xsl:if>
+                        <xsl:if test="email[@type='personal']">
+                            <strong>Personal:</strong>
+                            <xsl:apply-templates select="email[@type='personal']"/>
+                        </xsl:if>
+                        <xsl:if test="email[@type='other']">
+                            <strong>Other:</strong>
+                            <xsl:apply-templates select="email[@type='other']"/>
+                        </xsl:if>
+                        <xsl:if test="not(@type)">
+                            <strong>Unspecified:</strong>
+                            <xsl:apply-templates select="email[not(@type)]"/>
+                        </xsl:if>
+                    </div>
                 </li>
                 <li>
                     <strong>Phone: </strong> <br/>
