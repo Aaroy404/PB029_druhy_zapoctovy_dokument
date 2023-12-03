@@ -56,7 +56,6 @@
 							color: #000000;
 						}
 						.contact-name {
-							padding: 0em 0.5em;
 							background-color: #E6E1CF;
 							color: #000000;
 						}
