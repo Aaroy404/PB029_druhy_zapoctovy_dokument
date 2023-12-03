@@ -63,8 +63,9 @@
 							margin: 0;
 							padding: 0.5em 0.3em 0.3em 2em;
 							list-style: none;
-							background-color: #BCEFF1;
+							background-color: #E0F9FA;
 							color: #000000;
+                            border: 1px solid #000;
 						}
 						div.value {
 							text-indent: 1.5em;
@@ -106,7 +107,7 @@
     <xsl:template match="contact">
         <div class="contact-background">
             <div>
-                <span class="contact-name">Name: </span>
+                <Strong>Name: </Strong>
                 <xsl:apply-templates select="first-name"/>
                 <xsl:text> </xsl:text>
                 <xsl:apply-templates select="last-name"/>
