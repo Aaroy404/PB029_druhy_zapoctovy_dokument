@@ -208,19 +208,25 @@
                 <xsl:if test="other">
                     <li>
                         <strong>Other: </strong>
-                        <xsl:apply-templates select="other"/>
+                        <span class="basic-contact">
+                            <xsl:apply-templates select="other"/>
+                        </span>
                     </li>
                 </xsl:if>
                 <xsl:if test="address">
                     <li>
                         <strong>Address: </strong> <br/>
-                        <xsl:apply-templates select="address"/>
+                        <span class="basic-contact">
+                            <xsl:apply-templates select="address"/>
+                        </span>
                     </li>
                 </xsl:if>
                 <xsl:if test="note">
                     <li>
                         <strong>Note: </strong> <br/>
-                        <xsl:apply-templates select="note"/>
+                        <span class="basic-contact">
+                            <xsl:apply-templates select="note"/>
+                        </span>
                     </li>
                 </xsl:if>
             </ul>
@@ -255,7 +261,7 @@
         <div>
             <xsl:apply-templates select="street"/>
             <xsl:text>, </xsl:text>
-            <xsl:apply-templates select="home-number"/>
+            <xsl:apply-templates select="house-number"/>
             <xsl:text>, </xsl:text>
             <xsl:apply-templates select="city"/>
             <xsl:text>, </xsl:text>
