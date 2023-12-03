@@ -114,8 +114,7 @@
     <xsl:template match="contact">
         <div class="contact-background">
             <div>
-                <span class="contact-name">Name:
-                    <xsl:text> </xsl:text>
+                <span class="contact-name">
                     <xsl:apply-templates select="first-name"/>
                     <xsl:text> </xsl:text>
                     <xsl:apply-templates select="last-name"/>
