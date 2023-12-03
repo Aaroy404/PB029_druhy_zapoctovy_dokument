@@ -56,8 +56,10 @@
 							color: #000000;
 						}
 						.contact-name {
-							background-color: #E6E1DF;
+							background-color: #1DA5E5;
 							color: #000000;
+                            font-size: 1.5em;
+                            font-weight: bold;
 						}
                         .contact-background {
 							margin: 0;
@@ -107,9 +109,9 @@
     <xsl:template match="contact">
         <div class="contact-background">
             <div>
-                <Strong>Name: </Strong>
+                <span class="contact-name">Name: </span>
                 <xsl:apply-templates select="first-name"/>
-                <xsl:text> </xsl:text>
+                <xsl:span class="contact-name"> </xsl:span>
                 <xsl:apply-templates select="last-name"/>
             </div>
             <ul>
