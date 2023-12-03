@@ -102,7 +102,7 @@
             <div>
                 <strong>Name: </strong>
                 <xsl:apply-templates select="first-name"/>
-                " "
+                <xsl:text> </xsl:text>
                 <xsl:apply-templates select="last-name"/>
             </div>
             <ul>
