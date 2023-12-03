@@ -87,8 +87,12 @@
 				</div>
 				<div id="obsah">
 					<div id="text">
-						<xsl:apply-templates select="*"/>
-					</div>
+                        <!-- Sort contacts by first name and last name -->
+                        <xsl:apply-templates select="contact">
+                            <xsl:sort select="first-name" order="ascending"/>
+                            <xsl:sort select="last-name" order="ascending"/>
+                        </xsl:apply-templates>
+                    </div>
 				</div>
 			</body>
 		</html>
