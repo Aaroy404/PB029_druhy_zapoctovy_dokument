@@ -95,8 +95,10 @@
 	</xsl:template>
   
 	<xsl:template match="contact">
-		<xsl:apply-templates select="first-name"/>
-		<xsl:apply-templates select="last-name"/>
+        <div>
+		    <xsl:apply-templates select="first-name"/>
+		    <xsl:apply-templates select="last-name"/>
+        </div>
     </xsl:template>
     <xsl:template match="first-name">
         <span class="contact-name">
