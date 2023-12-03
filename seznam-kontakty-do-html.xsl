@@ -94,8 +94,8 @@
 					<div id="text">
                         <!-- Sort contacts by first name and last name -->
                         <xsl:apply-templates select="contact">
-                            <xsl:sort select="first-name" order="ascending"/>
                             <xsl:sort select="last-name" order="ascending"/>
+                            <xsl:sort select="first-name" order="ascending"/>
                         </xsl:apply-templates>
                     </div>
 				</div>
@@ -244,7 +244,9 @@
     </xsl:template>
     <xsl:template match="email">
         <div>
-            <xsl:value-of select="text()"/>
+            <a href="{text()}">
+                <xsl:value-of select="text()"/>
+            </a>
         </div>
     </xsl:template>
     <xsl:template match="phone">
@@ -254,7 +256,9 @@
     </xsl:template>
     <xsl:template match="url">
         <div>
-            <xsl:value-of select="text()"/>
+            <a href="{text()}">
+                <xsl:value-of select="text()"/>
+            </a>
         </div>
     </xsl:template>
     <xsl:template match="address">
