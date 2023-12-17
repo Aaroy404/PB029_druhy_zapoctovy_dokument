@@ -74,7 +74,7 @@
                             margin-left: 1em;
                         }
                         .basic-contact {
-                            text-indent: 1em;
+                            text-indent: 1.5em;
                         }
                         h4 {
                             display: block;
@@ -136,7 +136,7 @@
             <ul>
                 <xsl:if test="email">
                     <li>
-                        <h4>Email: </h4>
+                        <h4>Email:</h4>
                         <div class="basic-contact-header">
                             <xsl:if test="email[@type='work']">
                                 <h5>Work:</h5>
