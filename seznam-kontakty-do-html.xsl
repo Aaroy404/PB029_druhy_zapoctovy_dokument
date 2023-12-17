@@ -75,7 +75,7 @@
                         }
                         .basic-contact {
                             margin-left: 2em;
-                            text-indent: 3em;
+                            text-indent: 1em;
                         }
                         h4 {
                             display: block;
@@ -297,7 +297,7 @@
         </a>
     </xsl:template>
     <xsl:template match="note">
-            <xsl:apply-templates select="line"/>
+            <xsl:apply-templates select="line"/><br/>
     </xsl:template>
     <xsl:template match="line">
             <xsl:value-of select="text()"/>
