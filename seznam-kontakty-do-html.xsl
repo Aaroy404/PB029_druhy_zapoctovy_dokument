@@ -80,6 +80,8 @@
                             display: block;
                             font-size: 1.2em;
                             font-weight: bold;
+                            margin: 0;
+                            padding: 0;
                         }
 					]]>
 				</style>
