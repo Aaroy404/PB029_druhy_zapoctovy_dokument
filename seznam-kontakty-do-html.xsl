@@ -252,14 +252,14 @@
     </xsl:template>
     <xsl:template match="email">
         <div>
-            <a href="{mailto:text()}">
+            <a href="mailto:{text()}">
                 <xsl:value-of select="text()"/>
             </a>
         </div>
     </xsl:template>
     <xsl:template match="phone">
         <div>
-            <a href="tel:text()">
+            <a href="tel:{text()}">
                 <xsl:value-of select="text()"/>
             </a>
         </div>
