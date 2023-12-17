@@ -100,7 +100,7 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <p>
-                                    <strong>List is empty.</strong>
+                                    <strong>Contact list is empty.</strong>
                                 </p>
                             </xsl:otherwise>
                         </xsl:choose>
@@ -280,7 +280,6 @@
     </xsl:template>
     <xsl:template match="address">
         <a href="https://maps.google.com/maps?q={street/text()},+{house-number/text()},+{city/text()},+{zip/text()}">
-            <div>
                 <xsl:value-of select="street/text()"/>
                 <xsl:text>, </xsl:text>
                 <xsl:value-of select="house-number/text()"/>
@@ -288,7 +287,6 @@
                 <xsl:value-of select="city/text()"/>
                 <xsl:text>, </xsl:text>
                 <xsl:value-of select="zip/text()"/>
-            </div>
         </a>
     </xsl:template>
     <xsl:template match="note">
