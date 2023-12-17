@@ -276,15 +276,12 @@
         </span>
     </xsl:template>
     <xsl:template match="note">
-        <ul>
-            <xsl:apply-templates select="line"/>
-        </ul>
+        <xsl:apply-templates select="line"/>
+        <xsl:if test="position() &lt; last()"><xsl:text>----------------------------------</xsl:text></xsl:if>
     </xsl:template>
     <xsl:template match="line">
-        <li>
-            <span class="basic-contact">
-                <xsl:value-of select="text()"/><br/>
-            </span>
-        </li>
+        <span class="basic-contact">
+            <xsl:value-of select="text()"/><br/>
+        </span>
     </xsl:template>
 </xsl:transform>
