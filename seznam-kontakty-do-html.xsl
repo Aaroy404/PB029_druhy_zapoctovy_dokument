@@ -74,6 +74,7 @@
                             margin-left: 1em;
                         }
                         .basic-contact {
+                            margin-left: 2em;
                             text-indent: 3em;
                         }
                         h4 {
