@@ -47,7 +47,7 @@
 							color: #FF6600;
 						}
 						.contact-name {
-							background-color: #3AAFE6;
+							background-color: #72D1FD;
 							color: #000000;
                             font-size: 1.2em;
                             font-weight: bold;
@@ -276,9 +276,7 @@
         </span>
     </xsl:template>
     <xsl:template match="note">
-        <span class="basic-contact">
             <xsl:apply-templates select="line"/>
-        </span>
     </xsl:template>
     <xsl:template match="line">
         <span class="basic-contact">
