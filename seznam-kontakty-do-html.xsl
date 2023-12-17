@@ -114,9 +114,7 @@
                                 </xsl:apply-templates>
                             </xsl:when>
                             <xsl:otherwise>
-                                <p>
-                                    <h4>Contact list is empty.</h4>
-                                </p>
+                                <h4>Contact list is empty.</h4>
                             </xsl:otherwise>
                         </xsl:choose>
                     </div>
