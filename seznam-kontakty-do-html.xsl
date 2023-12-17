@@ -76,6 +76,11 @@
                         .basic-contact {
                             text-indent: 1em;
                         }
+                        h4 {
+                            display: block;
+                            font-size: 1.2em;
+                            font-weight: bold;
+                        }
 					]]>
 				</style>
 				<title>
@@ -122,10 +127,10 @@
             <ul>
                 <xsl:if test="email">
                     <li>
-                        <Strong>Email: </Strong><br/>
+                        <h4>Email: </h4><br/>
                         <div class="basic-contact-header">
                             <xsl:if test="email[@type='work']">
-                                <strong>Work:</strong>
+                                <h4>Work:</h4>
                                 <span class="basic-contact">
                                     <xsl:apply-templates select="email[@type='work']"/>
                                 </span>
