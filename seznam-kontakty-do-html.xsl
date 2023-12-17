@@ -276,11 +276,15 @@
         </span>
     </xsl:template>
     <xsl:template match="note">
+        <ul>
             <xsl:apply-templates select="line"/>
+        </ul>
     </xsl:template>
     <xsl:template match="line">
-        <span class="basic-contact">
-            <xsl:value-of select="text()"/><br/>
-        </span>
+        <li>
+            <span class="basic-contact">
+                <xsl:value-of select="text()"/><br/>
+            </span>
+        </li>
     </xsl:template>
 </xsl:transform>
