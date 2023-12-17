@@ -297,9 +297,9 @@
         </a>
     </xsl:template>
     <xsl:template match="note">
-            <xsl:apply-templates select="line"/><br/>
+            <xsl:apply-templates select="line"/>
     </xsl:template>
     <xsl:template match="line">
-            <xsl:value-of select="text()"/>
+            <xsl:value-of select="text()"/><xsl:if test="position() &lt; last()"><br/></xsl:if>
     </xsl:template>
 </xsl:transform>
