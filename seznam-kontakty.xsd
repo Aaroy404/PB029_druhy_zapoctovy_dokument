@@ -82,7 +82,6 @@
             <xs:element name="city" type="address-name-string">
                 
             </xs:element>
-            <!-- leading zeroes and non-alpha characters => all xs:string -->
         </xs:all>
     </xs:complexType>
     <xs:simpleType name="address-name-string">

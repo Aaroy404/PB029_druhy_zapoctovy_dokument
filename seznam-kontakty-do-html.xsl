@@ -5,8 +5,6 @@
 		<html>
 			<head>
 				<meta http-equiv="Content-Language" content="cs"/>
-				<meta http-equiv="Cache-Control" content="no-cache"/>
-				<meta http-equiv="Pragma" content="no-cache"/>
 				<meta name="description" content="Seznam lidí s jejich kontaktními údaji."/>
 				<meta name="keywords" content="seznam,kontakty,email,telefon,adresa,odkazy,poznámka"/>
 				<style type="text/css">
@@ -92,11 +90,20 @@
 				</div>
 				<div id="obsah">
 					<div id="text">
-                        <!-- Sort contacts by first name and last name -->
-                        <xsl:apply-templates select="contact">
-                            <xsl:sort select="last-name" order="ascending"/>
-                            <xsl:sort select="first-name" order="ascending"/>
-                        </xsl:apply-templates>
+                        <xsl:choose>
+                            <xsl:when test="contact">
+                                <!-- Sort contacts by first name and last name -->
+                                <xsl:apply-templates select="contact">
+                                    <xsl:sort select="last-name" order="ascending"/>
+                                    <xsl:sort select="first-name" order="ascending"/>
+                                </xsl:apply-templates>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <p>
+                                    <strong>List is empty.</strong>
+                                </p>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </div>
 				</div>
 			</body>
@@ -245,14 +252,16 @@
     </xsl:template>
     <xsl:template match="email">
         <div>
-            <a href="{text()}">
+            <a href="{mailto:text()}">
                 <xsl:value-of select="text()"/>
             </a>
         </div>
     </xsl:template>
     <xsl:template match="phone">
         <div>
-            <xsl:value-of select="text()"/>
+            <a href="tel:text()">
+                <xsl:phone select="text()"/>
+            </a>
         </div>
     </xsl:template>
     <xsl:template match="url">
@@ -270,7 +279,7 @@
         </div>
     </xsl:template>
     <xsl:template match="address">
-        <a href="http://maps.google.com/maps?q={street/text()},+{house-number/text()},+{city/text()},+{zip/text()}">
+        <a href="https://maps.google.com/maps?q={street/text()},+{house-number/text()},+{city/text()},+{zip/text()}">
             <div>
                 <xsl:value-of select="street/text()"/>
                 <xsl:text>, </xsl:text>
