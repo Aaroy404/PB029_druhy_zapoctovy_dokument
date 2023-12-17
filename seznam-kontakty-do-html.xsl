@@ -145,21 +145,15 @@
                             </xsl:if>
                             <xsl:if test="email[@type='personal']">
                                 <h5>Personal:</h5>
-                                <span class="basic-contact">
                                     <xsl:apply-templates select="email[@type='personal']"/>
-                                </span>
                             </xsl:if>
                             <xsl:if test="email[@type='other']">
                                 <h5>Other:</h5>
-                                <span class="basic-contact">
                                     <xsl:apply-templates select="email[@type='other']"/>
-                                </span>
                             </xsl:if>
                             <xsl:if test="email[not(@type)]">
                                 <h5>Unspecified:</h5>
-                                <span class="basic-contact">
                                     <xsl:apply-templates select="email[not(@type)]"/>
-                                </span>
                             </xsl:if>
                         </div>
                     </li>
@@ -170,27 +164,19 @@
                         <div class="basic-contact-header">
                             <xsl:if test="phone[@type='work']">
                                 <h5>Work:</h5>
-                                <span class="basic-contact">
                                     <xsl:apply-templates select="phone[@type='work']"/>
-                                </span>
                             </xsl:if>
                             <xsl:if test="phone[@type='personal']">
                                 <h5>Personal:</h5>
-                                <span class="basic-contact">
                                     <xsl:apply-templates select="phone[@type='personal']"/>
-                                </span>
                             </xsl:if>
                             <xsl:if test="phone[@type='other']">
                                 <h5>Other:</h5>
-                                <span class="basic-contact">
                                     <xsl:apply-templates select="phone[@type='other']"/>
-                                </span>
                             </xsl:if>
                             <xsl:if test="phone[not(@type)]">
                                 <h5>Unspecified:</h5>
-                                <span class="basic-contact">
                                     <xsl:apply-templates select="phone[not(@type)]"/>
-                                </span>
                             </xsl:if>
                         </div>
                     </li>
@@ -201,27 +187,19 @@
                         <div class="basic-contact-header">
                             <xsl:if test="url[@type='work']">
                                 <h5>Work:</h5>
-                                <span class="basic-contact">
                                     <xsl:apply-templates select="url[@type='work']"/>
-                                </span>
                             </xsl:if>
                             <xsl:if test="url[@type='personal']">
                                 <h5>Personal:</h5>
-                                <span class="basic-contact">
                                     <xsl:apply-templates select="url[@type='personal']"/>
-                                </span>
                             </xsl:if>
                             <xsl:if test="url[@type='other']">
                                 <h5>Other:</h5>
-                                <span class="basic-contact">
                                     <xsl:apply-templates select="url[@type='other']"/>
-                                </span>
                             </xsl:if>
                             <xsl:if test="url[not(@type)]">
                                 <h5>Unspecified:</h5>
-                                <span class="basic-contact">
                                     <xsl:apply-templates select="url[not(@type)]"/>
-                                </span>
                             </xsl:if>
                         </div>
                     </li>
@@ -229,25 +207,19 @@
                 <xsl:if test="other">
                     <li>
                         <h4>Other contacts: </h4>
-                        <span class="basic-contact">
                             <xsl:apply-templates select="other"/>
-                        </span>
                     </li>
                 </xsl:if>
                 <xsl:if test="address">
                     <li>
                         <h4>Address: </h4>
-                        <span class="basic-contact">
                             <xsl:apply-templates select="address"/>
-                        </span>
                     </li>
                 </xsl:if>
                 <xsl:if test="note">
                     <li>
                         <h4>Note: </h4>
-                        <span class="basic-contact">
                             <xsl:apply-templates select="note"/>
-                        </span>
                     </li>
                 </xsl:if>
             </ul>
