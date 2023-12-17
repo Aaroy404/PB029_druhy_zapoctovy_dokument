@@ -3,8 +3,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Language" content="cs">
-<meta http-equiv="Cache-Control" content="no-cache">
-<meta http-equiv="Pragma" content="no-cache">
 <meta name="description" content="Seznam lidí s jejich kontaktními údaji.">
 <meta name="keywords" content="seznam,kontakty,email,telefon,adresa,odkazy,poznámka">
 <style type="text/css">
@@ -74,7 +72,22 @@
                             margin-left: 1em;
                         }
                         .basic-contact {
+                            margin-left: 2em;
                             text-indent: 1em;
+                        }
+                        h4 {
+                            display: block;
+                            font-size: 1.2em;
+                            font-weight: bold;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        h5 {
+                            display: block;
+                            font-size: 1em;
+                            font-weight: bold;
+                            margin: 0;
+                            padding: 0;
                         }
 					
 				</style>
@@ -87,23 +100,30 @@
 <div><span class="contact-name"><span>John</span> <span>Doe</span></span></div>
 <ul>
 <li>
-<Strong>Email: </Strong><br><div class="basic-contact-header">
-<strong>Work:</strong><span class="basic-contact"><div><a href="john.doe@example.com">john.doe@example.com</a></div></span>
+<h4>Email:</h4>
+<div class="basic-contact-header">
+<h5>Work:</h5>
+<span class="basic-contact"><a href="mailto:john.doe@example.com">john.doe@example.com</a></span>
 </div>
 </li>
 <li>
-<strong>Phone: </strong><br><div class="basic-contact-header">
-<strong>Unspecified:</strong><span class="basic-contact"><div>+421 123 456 789</div></span>
+<h4>Phone: </h4>
+<div class="basic-contact-header">
+<h5>Unspecified:</h5>
+<span class="basic-contact"><a href="tel:+421%20123%20456%20789">+421 123 456 789</a></span>
 </div>
 </li>
 <li>
-<strong>Other contacts: </strong><span class="basic-contact"><div>Facebook: JohnDoe123</div></span>
+<h4>Other contacts: </h4>
+<span class="basic-contact">Facebook: JohnDoe123</span>
 </li>
 <li>
-<strong>Address: </strong><br><span class="basic-contact"><a href="http://maps.google.com/maps?q=Main%20St,+17b,+New%20York,+100%2001"><div>Main St, 17b, New York, 100 01</div></a><a href="http://maps.google.com/maps?q=Second%20St,+34,+Los%20Angeles,+90001"><div>Second St, 34, Los Angeles, 90001</div></a></span>
+<h4>Address: </h4>
+<span class="basic-contact"><a href="https://maps.google.com/maps?q=Main%20St,+17b,+New%20York,+100%2001">Main St, 17b, New York, 100 01</a><a href="https://maps.google.com/maps?q=Second%20St,+34,+Los%20Angeles,+90001">Second St, 34, Los Angeles, 90001</a></span>
 </li>
 <li>
-<strong>Note: </strong><br><span class="basic-contact"><div><div>First record note.</div></div></span>
+<h4>Note: </h4>
+<span class="basic-contact">First record note.</span>
 </li>
 </ul>
 </div>
@@ -111,17 +131,22 @@
 <div><span class="contact-name"><span>David</span> <span>Johnson</span></span></div>
 <ul>
 <li>
-<Strong>Email: </Strong><br><div class="basic-contact-header">
-<strong>Work:</strong><span class="basic-contact"><div><a href="david-johnson76@domain.en">david-johnson76@domain.en</a></div></span>
+<h4>Email:</h4>
+<div class="basic-contact-header">
+<h5>Work:</h5>
+<span class="basic-contact"><a href="mailto:david-johnson76@domain.en">david-johnson76@domain.en</a></span>
 </div>
 </li>
 <li>
-<strong>Phone: </strong><br><div class="basic-contact-header">
-<strong>Other:</strong><span class="basic-contact"><div>777888999</div></span>
+<h4>Phone: </h4>
+<div class="basic-contact-header">
+<h5>Other:</h5>
+<span class="basic-contact"><a href="tel:777888999">777888999</a></span>
 </div>
 </li>
 <li>
-<strong>Address: </strong><br><span class="basic-contact"><a href="http://maps.google.com/maps?q=Sixth%20St,+12,+San%20Francisco,+94101"><div>Sixth St, 12, San Francisco, 94101</div></a></span>
+<h4>Address: </h4>
+<span class="basic-contact"><a href="https://maps.google.com/maps?q=Sixth%20St,+12,+San%20Francisco,+94101">Sixth St, 12, San Francisco, 94101</a></span>
 </li>
 </ul>
 </div>
@@ -129,28 +154,34 @@
 <div><span class="contact-name"><span>Michael</span> <span>Johnson</span></span></div>
 <ul>
 <li>
-<Strong>Email: </Strong><br><div class="basic-contact-header">
-<strong>Work:</strong><span class="basic-contact"><div><a href="michael.johnson@example.com">michael.johnson@example.com</a></div>
-<div><a href="maikjunsun@firm.uk">maikjunsun@firm.uk</a></div></span><strong>Unspecified:</strong><span class="basic-contact"><div><a href="mickyjohnny654@somewhere.something">mickyjohnny654@somewhere.something</a></div></span>
+<h4>Email:</h4>
+<div class="basic-contact-header">
+<h5>Work:</h5>
+<span class="basic-contact"><a href="mailto:michael.johnson@example.com">michael.johnson@example.com</a><a href="mailto:maikjunsun@firm.uk">maikjunsun@firm.uk</a></span><h5>Unspecified:</h5>
+<span class="basic-contact"><a href="mailto:mickyjohnny654@somewhere.something">mickyjohnny654@somewhere.something</a></span>
 </div>
 </li>
 <li>
-<strong>Phone: </strong><br><div class="basic-contact-header">
-<strong>Unspecified:</strong><span class="basic-contact"><div>+7 555 555 555</div></span>
+<h4>Phone: </h4>
+<div class="basic-contact-header">
+<h5>Unspecified:</h5>
+<span class="basic-contact"><a href="tel:+7%20555%20555%20555">+7 555 555 555</a></span>
 </div>
 </li>
 <li>
-<strong>Url: </strong><br><div class="basic-contact-header">
-<strong>Personal:</strong><span class="basic-contact"><div><a href="http://www.michaeljohnson.com">http://www.michaeljohnson.com</a></div></span>
+<h4>Url: </h4>
+<div class="basic-contact-header">
+<h5>Personal:</h5>
+<span class="basic-contact"><a href="http://www.michaeljohnson.com">http://www.michaeljohnson.com</a></span>
 </div>
 </li>
 <li>
-<strong>Other contacts: </strong><span class="basic-contact"><div>Twitter: MichaelJohnsonIsCool</div></span>
+<h4>Other contacts: </h4>
+<span class="basic-contact">Twitter: MichaelJohnsonIsCool</span>
 </li>
 <li>
-<strong>Note: </strong><br><span class="basic-contact"><div><div>Three</div></div>
-<div><div>different</div></div>
-<div><div>notes.</div></div></span>
+<h4>Note: </h4>
+<span class="basic-contact">Threedifferentnotes.</span>
 </li>
 </ul>
 </div>
@@ -158,12 +189,15 @@
 <div><span class="contact-name"><span>Jane</span> <span>Smith</span></span></div>
 <ul>
 <li>
-<Strong>Email: </Strong><br><div class="basic-contact-header">
-<strong>Personal:</strong><span class="basic-contact"><div><a href="jane.smith-favorite-email123@mymail123.com">jane.smith-favorite-email123@mymail123.com</a></div></span>
+<h4>Email:</h4>
+<div class="basic-contact-header">
+<h5>Personal:</h5>
+<span class="basic-contact"><a href="mailto:jane.smith-favorite-email123@mymail123.com">jane.smith-favorite-email123@mymail123.com</a></span>
 </div>
 </li>
 <li>
-<strong>Address: </strong><br><span class="basic-contact"><a href="http://maps.google.com/maps?q=Someone's%20street,+56,+Chicago,+60601"><div>Someone's street, 56, Chicago, 60601</div></a></span>
+<h4>Address: </h4>
+<span class="basic-contact"><a href="https://maps.google.com/maps?q=Someone's%20street,+56,+Chicago,+60601">Someone's street, 56, Chicago, 60601</a></span>
 </li>
 </ul>
 </div>
@@ -171,24 +205,26 @@
 <div><span class="contact-name"><span>Sarah</span> <span>Williams</span></span></div>
 <ul>
 <li>
-<strong>Phone: </strong><br><div class="basic-contact-header">
-<strong>Unspecified:</strong><span class="basic-contact"><div>+53 111 222 333</div></span>
+<h4>Phone: </h4>
+<div class="basic-contact-header">
+<h5>Unspecified:</h5>
+<span class="basic-contact"><a href="tel:+53%20111%20222%20333">+53 111 222 333</a></span>
 </div>
 </li>
 <li>
-<strong>Url: </strong><br><div class="basic-contact-header">
-<strong>Unspecified:</strong><span class="basic-contact"><div><a href="http://www.sarahwilliams.com">http://www.sarahwilliams.com</a></div></span>
+<h4>Url: </h4>
+<div class="basic-contact-header">
+<h5>Unspecified:</h5>
+<span class="basic-contact"><a href="http://www.sarahwilliams.com">http://www.sarahwilliams.com</a></span>
 </div>
 </li>
 <li>
-<strong>Address: </strong><br><span class="basic-contact"><a href="http://maps.google.com/maps?q=Fifth%20St,+90,+Seattle,+981%2001"><div>Fifth St, 90, Seattle, 981 01</div></a></span>
+<h4>Address: </h4>
+<span class="basic-contact"><a href="https://maps.google.com/maps?q=Fifth%20St,+90,+Seattle,+981%2001">Fifth St, 90, Seattle, 981 01</a></span>
 </li>
 <li>
-<strong>Note: </strong><br><span class="basic-contact"><div>
-<div>Multiline note about</div>
-<div>the amazing Sarah Williams.</div>
-<div>Amazing indeed.</div>
-</div></span>
+<h4>Note: </h4>
+<span class="basic-contact">Multiline note about<br>the amazing Sarah Williams.<br>Amazing indeed.</span>
 </li>
 </ul>
 </div>
