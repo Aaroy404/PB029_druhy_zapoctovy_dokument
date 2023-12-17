@@ -251,32 +251,24 @@
         </span>
     </xsl:template>
     <xsl:template match="email">
-        <div>
             <a href="mailto:{text()}">
                 <xsl:value-of select="text()"/>
             </a>
-        </div>
     </xsl:template>
     <xsl:template match="phone">
-        <div>
             <a href="tel:{text()}">
                 <xsl:value-of select="text()"/>
             </a>
-        </div>
     </xsl:template>
     <xsl:template match="url">
-        <div>
             <a href="{text()}">
                 <xsl:value-of select="text()"/>
             </a>
-        </div>
     </xsl:template>
     <xsl:template match="other">
-        <div>
             <xsl:value-of select="service"/>
             <xsl:text>: </xsl:text>
             <xsl:value-of select="ID"/>
-        </div>
     </xsl:template>
     <xsl:template match="address">
         <a href="https://maps.google.com/maps?q={street/text()},+{house-number/text()},+{city/text()},+{zip/text()}">
@@ -290,13 +282,9 @@
         </a>
     </xsl:template>
     <xsl:template match="note">
-        <div>
             <xsl:apply-templates select="line"/>
-        </div>
     </xsl:template>
     <xsl:template match="line">
-        <div>
             <xsl:value-of select="text()"/>
-        </div>
     </xsl:template>
 </xsl:transform>
