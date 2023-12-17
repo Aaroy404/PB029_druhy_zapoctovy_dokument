@@ -260,7 +260,7 @@
     <xsl:template match="phone">
         <div>
             <a href="tel:text()">
-                <xsl:phone select="text()"/>
+                <xsl:value-of select="text()"/>
             </a>
         </div>
     </xsl:template>
