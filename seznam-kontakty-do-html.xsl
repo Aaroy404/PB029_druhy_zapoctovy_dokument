@@ -279,7 +279,7 @@
         <xsl:apply-templates select="line"/>
         <xsl:if test="position() &lt; last()">
             <span class="basic-contact">
-                <xsl:text>----------------------------------</xsl:text>
+                <xsl:text>-----------------------------------</xsl:text>
                 <br/>
             </span>
         </xsl:if>
