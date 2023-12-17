@@ -141,9 +141,7 @@
                         <div class="basic-contact-header">
                             <xsl:if test="email[@type='work']">
                                 <h5>Work:</h5>
-                                <span class="basic-contact">
                                     <xsl:apply-templates select="email[@type='work']"/>
-                                </span>
                             </xsl:if>
                             <xsl:if test="email[@type='personal']">
                                 <h5>Personal:</h5>
@@ -266,9 +264,11 @@
         </span>
     </xsl:template>
     <xsl:template match="email">
+        <span class="basic-contact">
             <a href="mailto:{text()}">
                 <xsl:value-of select="text()"/>
             </a><br/>
+        </span>
     </xsl:template>
     <xsl:template match="phone">
             <a href="tel:{text()}">
@@ -276,31 +276,41 @@
             </a><br/>
     </xsl:template>
     <xsl:template match="url">
+        <span class="basic-contact">
             <a href="{text()}">
                 <xsl:value-of select="text()"/>
             </a><br/>
+        </span>
     </xsl:template>
     <xsl:template match="other">
+        <span class="basic-contact">
             <xsl:value-of select="service"/>
             <xsl:text>: </xsl:text>
             <xsl:value-of select="ID"/>
             <br/>
+        </span>
     </xsl:template>
     <xsl:template match="address">
-        <a href="https://maps.google.com/maps?q={street/text()},+{house-number/text()},+{city/text()},+{zip/text()}">
-                <xsl:value-of select="street/text()"/>
-                <xsl:text>, </xsl:text>
-                <xsl:value-of select="house-number/text()"/>
-                <xsl:text>, </xsl:text>
-                <xsl:value-of select="city/text()"/>
-                <xsl:text>, </xsl:text>
-                <xsl:value-of select="zip/text()"/>
-        </a><br/>
+        <span class="basic-contact">
+            <a href="https://maps.google.com/maps?q={street/text()},+{house-number/text()},+{city/text()},+{zip/text()}">
+                    <xsl:value-of select="street/text()"/>
+                    <xsl:text>, </xsl:text>
+                    <xsl:value-of select="house-number/text()"/>
+                    <xsl:text>, </xsl:text>
+                    <xsl:value-of select="city/text()"/>
+                    <xsl:text>, </xsl:text>
+                    <xsl:value-of select="zip/text()"/>
+            </a><br/>
+        </span>
     </xsl:template>
     <xsl:template match="note">
+        <span class="basic-contact">
             <xsl:apply-templates select="line"/>
+        </span>
     </xsl:template>
     <xsl:template match="line">
+        <span class="basic-contact">
             <xsl:value-of select="text()"/><br/>
+        </span>
     </xsl:template>
 </xsl:transform>
