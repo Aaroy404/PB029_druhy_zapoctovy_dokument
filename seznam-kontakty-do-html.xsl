@@ -243,9 +243,11 @@
         </span>
     </xsl:template>
     <xsl:template match="phone">
+        <span class="basic-contact">
             <a href="tel:{text()}">
                 <xsl:value-of select="text()"/>
             </a><br/>
+        </span>
     </xsl:template>
     <xsl:template match="url">
         <span class="basic-contact">
