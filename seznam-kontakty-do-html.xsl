@@ -136,7 +136,7 @@
             <ul>
                 <xsl:if test="email">
                     <li>
-                        <h4>Email: </h4><br/>
+                        <h4>Email: </h4>
                         <div class="basic-contact-header">
                             <xsl:if test="email[@type='work']">
                                 <h5>Work:</h5>
@@ -167,7 +167,7 @@
                 </xsl:if>
                 <xsl:if test="phone">
                     <li>
-                        <h4>Phone: </h4> <br/>
+                        <h4>Phone: </h4>
                         <div class="basic-contact-header">
                             <xsl:if test="phone[@type='work']">
                                 <h5>Work:</h5>
@@ -198,7 +198,7 @@
                 </xsl:if>
                 <xsl:if test="url">
                     <li>
-                        <h4>Url: </h4> <br/>
+                        <h4>Url: </h4>
                         <div class="basic-contact-header">
                             <xsl:if test="url[@type='work']">
                                 <h5>Work:</h5>
@@ -237,7 +237,7 @@
                 </xsl:if>
                 <xsl:if test="address">
                     <li>
-                        <h4>Address: </h4> <br/>
+                        <h4>Address: </h4>
                         <span class="basic-contact">
                             <xsl:apply-templates select="address"/>
                         </span>
@@ -245,7 +245,7 @@
                 </xsl:if>
                 <xsl:if test="note">
                     <li>
-                        <h4>Note: </h4> <br/>
+                        <h4>Note: </h4>
                         <span class="basic-contact">
                             <xsl:apply-templates select="note"/>
                         </span>
